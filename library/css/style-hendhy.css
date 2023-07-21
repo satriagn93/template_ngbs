@@ -1,0 +1,503 @@
+header{
+    display: none;
+}
+
+/* body{
+    background: #43384E;
+} */
+
+footer{
+    display: none;
+}
+
+button{
+  background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+canvas{
+  /*prevent interaction with the canvas*/
+    pointer-events:none;
+    margin-right: 10px;
+    width: 200px;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 2px solid whitesmoke;
+}
+
+.captcha-container-h{
+    display: flex;
+}
+
+.captcha-img{
+    opacity: 60%;
+}
+
+.bgBcm{
+  background-color: #EDEDED !important;
+}
+
+.bgAdd-hen{
+  background-color: #EDEDED !important;
+  height: auto;
+  /* padding-top: -80px; */
+  width: 100%;
+}
+
+.nav-tabs{
+  border: none !important;
+}
+
+.container-h{
+    top: 151px;
+    left: 1237px;
+    width: 450px;
+    height: 650px;
+    margin-top: 117px;
+    margin-right: 60px;
+    margin-bottom: 116px;
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+    border-radius: 18px;
+    opacity: 1;
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    float: right;
+}
+
+.content-h{
+    height: 90%;
+    padding: 44px;
+    text-align: left;
+    color: #1A1311;
+}
+
+.header-content-h{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('../fonts/HKGrotesk-Italic.woff2') format('woff2'),
+        url('../fonts/HKGrotesk-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+
+.title-h{
+    color: hsl(270, 16%, 26%) !important;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.desc-h{
+    color: #1A1311 !important;
+    font-size: 15px;
+    opacity: 60%;
+}
+
+.form-input-h{
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: #ffffff;
+    border: 2px solid whitesmoke;
+  }
+
+  .btn-container{
+    position:relative;
+    margin-top:30%;
+  }
+
+  .btn-container-register{
+    position:relative;
+    margin-top:10%;
+  }
+
+  .btn-login-enable{
+    background-color: #FCAF16;
+    border-radius: 14px;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .btn-register {
+    background-color: #fff;
+    border: 2.2px solid #B2B2B2;
+    border-radius: 14px;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .call-us-h{
+    color: #EDEDED;
+    opacity: 50%;
+  }
+
+  a{
+    color: #EDEDED;
+    font-weight: bold;
+    opacity: 100% !important;
+  }
+
+  a:hover{
+    color: #FCAF16;
+    opacity: 100% !important;
+  }
+
+  /* RADIO BUTTON */
+
+  #type1{
+    background-color: #FFFFFF;
+    height: 55px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+  }
+  #type2{
+    background-color: #FFFFFF;
+    height: 55px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+  }
+
+  .containers-h {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  .containers-h a{
+    font-size: 10px;
+    font-weight: normal;
+    opacity: 50% !important;
+  }
+  
+  /* Hide the browser's default radio button */
+  .containers-h input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  #body_container{
+    background: none !important;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .containers-h:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .containers-h input:checked ~ .checkmark {
+    background-color: #FCAF16;
+  }
+
+  .containers-h input:checked ~ .containers-h {
+    background-color: #FCAF16;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .containers-h input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .containers-h .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  .modal-hen {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-wrap-hen {
+    background-color: #F8F8F8;
+    margin: auto;
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 450px;
+    border-radius: 12px;
+  }
+
+  .modal-title-h{
+    font-weight: bold;
+    font-size: 20px;
+    color: #1A1311;
+    margin-bottom: 20px;
+  }
+
+  #ktp{
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    display: flex;
+  }
+
+  #npwp{
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    display: flex;
+  }
+
+  #skp{
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    display: flex;
+  }
+
+  .menu-hen {
+    display: block;
+    position: relative;
+    padding-left: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1A1311;
+  }
+
+  .menu-hen a{
+    font-size: 10px;
+    font-weight: normal;
+    opacity: 50% !important;
+  }
+  
+  /* Hide the browser's default radio button */
+  .menu-hen input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background: #eee;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .menu-hen:hover input ~ .checkmark-menu {
+    background: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .menu-hen input:checked ~ .checkmark-menu {
+    background: #FCAF16;
+  }
+
+  .menu-hen input:checked ~ .menu-hen {
+    background: #FCAF16;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark-menu:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .menu-hen input:checked ~ .checkmark-menu:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .menu-hen .checkmark-menu:after {
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  ul.breadcrumb {
+    /* padding: 10px 16px; */
+    list-style: none;
+    background-color: #EDEDED;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 10px;
+    color: #FCAF16;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #545045;
+    content: ">";
+  }
+  ul.breadcrumb li a {
+    color: #545045;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+
+  .form-number-hen{
+    text-decoration: none !important;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  .register-account{
+    margin-top: 20px;
+    margin-right: 8%;
+    margin-bottom: 5%;
+    color: #1A1311;
+    width: 13% !important;
+    float: right;
+  }
+
+  .contact-person{
+    display: flow-root !important;
+  }
+
+  .upload-document{
+    width: 60% !important;
+  }
+
+  .wrap1{
+    width: 55%;
+    margin-right: 10px;
+  }
+
+  .wrap2{
+    width: 35%;
+  }
+
+  .containerForm-h{
+    margin-left: 33px;
+    display: flex;
+    flex-direction: row;
+  }
+
+.backButton-hen {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 55px;
+    align-items: center;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 10px;
+    padding-left: 33px;
+}
+
+.txt-upload-hen{
+  width: 26%;
+  height: 45px;
+  margin-left: 10px;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 12px;
+  background-color: #ffffff;
+  border: 2px solid whitesmoke;
+  border-style: dashed;
+}
+
+.icon_upload-hen{
+  float: left;
+  width: 15px; 
+  height: 15px; 
+  margin-right: 10px;
+  margin-left: 10%;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMS41NzEiIGhlaWdodD0iMTAuNTE2IiB2aWV3Qm94PSIwIDAgMTEuNTcxIDEwLjUxNiI+CiAgPGcgaWQ9Ikdyb3VwXzYxNTciIGRhdGEtbmFtZT0iR3JvdXAgNjE1NyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTgxMi44OTggMC42KSI+CiAgICA8cGF0aCBpZD0iUGF0aF8yNjgwIiBkYXRhLW5hbWU9IlBhdGggMjY4MCIgZD0iTTE0Ljg3MSwyMi41djIuM2ExLjE1MiwxLjE1MiwwLDAsMS0xLjE1MiwxLjE1Mkg1LjY1MkExLjE1MiwxLjE1MiwwLDAsMSw0LjUsMjQuOFYyMi41IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4MDguOTk4IC0xNi42NDEpIiBmaWxsPSJub25lIiBzdHJva2U9IiM0MzM4NGUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIDxwYXRoIGlkPSJQYXRoXzI2ODEiIGRhdGEtbmFtZT0iUGF0aCAyNjgxIiBkPSJNMTQuMjkzLDYuNCwxMi40LDQuNSwxMC41LDYuNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODA2LjI4NyAtNC41KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDMzODRlIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICA8cGF0aCBpZD0iUGF0aF8yNjgyIiBkYXRhLW5hbWU9IlBhdGggMjY4MiIgZD0iTTE4LDQuNXY1Ljg1OCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODAwLjY4MyAtNC41KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDMzODRlIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgPC9nPgo8L3N2Zz4K') no-repeat right;
+  background-size: 90%;
+}

@@ -1,0 +1,59 @@
+#bcmHomeBar{
+/*	overflow: hidden;*/
+margin-top: 15px;	
+margin-bottom: 30px;
+}
+#bcmHomeBar {
+  --color-1: #43384E;
+  --color-2: #FDBA20;
+}
+#bcmHomeBar .tooltip{
+	text-align: left;
+	background-color: #fff;
+	color: #000;
+	font-size: 10px;
+}
+#bcmHomeBar .tooltip .tp_price{
+	font-size: 12px;
+	font-weight: 600;
+}
+#bcmHomeBar .tooltip .tp_persmall b{
+	color: green;
+	font-weight: 600;
+}
+#bcmHomeBar tbody tr{
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.homeBar_th_row{
+
+}
+.homeBar_th_row .ico_th_row{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #77C190;
+    position: absolute;
+    top: 7px;
+}
+.homeBar_th_row .in_th_row{
+  margin-top: 45px;
+     font-weight: 500;
+    font-size: 12px;
+}
+
+
+/*#bcmHomeBar tbody {
+  overflow-y: hidden; 
+}
+#bcmHomeBar tbody th {
+  background-color: #fff;
+  z-index: 1;
+}
+#bcmHomeBar tbody td {
+  animation: moving-bars 5s linear infinite;
+}
+@keyframes moving-bars {
+  0%  { transform: translateY( 100% ); }
+  5% { transform: translateY( 0 ); }
+}*/
