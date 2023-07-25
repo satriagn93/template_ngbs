@@ -128,10 +128,11 @@
                 </div>
                 <!-- =======> your body code END here~ -->
             </div>
-            <!-- =================include================== -->
-            <div id="divCreate" style="display: none;"></div>
-            <!-- =================include================== -->
         </div>
+        <!-- =================include================== -->
+        <div id="divCreate" style="display: none;"></div>
+        <div id="divDetail" style="display: none;"></div>
+        <!-- =================include================== -->
     </div>
 
     <!-- ======================MODAL======================== -->
@@ -162,6 +163,8 @@
     $(document).ready(function () {
 
         $("#divCreate").load("create.html"); 
+
+        $("#divDetail").load("detail.html"); 
 
         loopdata();
         var table = $('.datTable').DataTable({
@@ -230,11 +233,11 @@
             });
     });
 
-    // ==============MODAL CREATE==============
-
     var listIndex = document.getElementById("listIndex");
     var divCreate = document.getElementById("divCreate");
+    var divDetail = document.getElementById("divDetail");
 
+    // ==============MODAL CREATE==============
     function modalAdd() {
         $('#modalAdd').show();
     }
@@ -248,6 +251,13 @@
         listIndex.style.display = "none";
         divCreate.style.display = "block";
     }
+
+    function submitCreate() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        divCreate.style.display = "none";
+        divDetail.style.display = "block";
+    }    
     // ==============MODAL CREATE==============
 
     function openModal(param) {
