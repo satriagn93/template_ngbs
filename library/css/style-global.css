@@ -372,6 +372,9 @@ input:focus, input:focus-visible, textarea:focus-visible {
 .ul_topMenu li.act{
   border-bottom: 3px solid #FDBA20;
 }
+.ul_topMenu li.dect{
+  border-bottom: none;
+}
 .ul_topMenu li.w_small{
   width: 10%;
 }
@@ -496,6 +499,7 @@ div.dataTables_wrapper div.dataTables_info{
   margin-bottom: 20px;
 }
 .bx_standHome_bcm{
+  position: relative;
   background: #F8F8F8;
   border-radius: 22px;
   height: auto;
@@ -504,7 +508,7 @@ div.dataTables_wrapper div.dataTables_info{
   margin-bottom: 20px;
 }
 .ht_standHome{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 1.64px;
     color: #545045;
@@ -591,7 +595,7 @@ div.dataTables_wrapper div.dataTables_info{
 }
 .value_balance_homeChart{
   position: relative;
-  font-size: 25px;
+  font-size: 23px;
   color: #545045;
   font-weight: 600;
   transition: 0.3s;
@@ -850,6 +854,8 @@ table.homeTable tbody tr td{
   color: #4D4E56;
   background: #EEEDF0;
 }
+
+
 
 @media only screen and (max-width: 769px) {
 }

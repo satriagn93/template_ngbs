@@ -17,6 +17,13 @@
   /* padding-top: 40px; */
   width: 100%;
 }
+.bgEditWithPadding-h{
+  /* background-color: #d7d9d7; */
+  height: auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  width: 100%;
+}
 .table-h{
   background-color: #f8f8f8;
   height: auto;
@@ -82,6 +89,43 @@
   text-decoration: underline;
   cursor: pointer;
 }
+.modal-menu-main-h {
+  /* width: 600px; */
+  background: #F8F8F8 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+  max-width: 300px;
+}
+/* MODAL MENU */
+.submodal-title-h {
+  color: #cdcbcf;
+  cursor: pointer;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.c-modal-content-txt {
+  color: #7D8786;
+  font-weight: normal;
+}
+
+.modal-menu-content-h {
+  margin: 9.5%;
+  margin-left: 440px;
+  padding: 30px;
+}
+
+.modal-menu-h {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
 .h-table-margin-inside{
   overflow: auto;
   height: 300px;
@@ -170,7 +214,7 @@
   width: 100%;
   height: 40px;
   font-size: 15px;
-  color: #fff;
+  /* color: #fff; */
   padding-left: 15px;
   padding-right: 60px;
   border-radius: 10px;
@@ -480,6 +524,32 @@
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAzCAYAAADciPtuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAZlSURBVHgB7VlLbxNXFD7njvOoRFBEFxWtaEyE+qClNYKWUBZMSCTUBY5ZsMZZ8lLiXxDzC0gkHktg3UWcIFQJJcRUpSRUUV0VqQVRMFULEiqSq6LacXLv7TnXY2OCH+PHOETik8bzuuO53z3vMwgtgm2HukVahhHF51APUP8jtYjF52NxV8OhBbC/CAUsS03SoR8ahAaIXp+fPl1tnOfE7L6Q3wI1B4YUxjWoy1AjEMRRomTnz92Q84HHsEBGaWp+0BibXZg6DHWgvy9oC2BthHENSOqso4N7gt0zC9ORcs8I8BqIxqYk4gQ0CIX6Z6mwnxYppRFGB/oOXSw31ntiGrqdoyQ0AfEfY4k8OVq1cDly3hPzAG7IrQ9iCCmzfyH9quTWBTHUOsF7IfBo8fVK5Dz3is2Aylgx0anGSGIBmvycBItdfdK5nQJUw6DERZJs+EBf8BGFgui6kFg8EUspEP3akEGb4yJtD/MbSWySxGrUlELCCO/XjfOgVCrJ5EgqExzoISex1RvbYzcnBetCFfNgcrQbLXd/oC/4EJy0zXNiklaZ1MJ2JtUytCQJbhbOnz8f0lrb2Ww2GolEUqvv5yVGi7l13djYhQsX/EopducjPp8vUG18zapIhmlbqEIk7B7QygmYIklZ+w3VacXi8VgKmgyH1Bwi8vsmTp06Fa/2jGtiB/oOhRFwjKKKn+sGUzwUNJlybgqQVlqdoTgy7qZeqgVE6gzknELyxIkTo26eqUqMK18ro+mPdZjPESFBPKa0EgkUuVRHaRmgyniIgohNVKOk62F2Gs1wGOfOnaPFBNIQSApB7t4lqhKz0poiug4RmRSCPj0zf2W8xLA4beMcPwQFTyJniks6r0iOVYycQeD48eOxMvdtklaUj0kNI8eOHUuCS1R0HoN9wTEmxRFfotg5s1CSVAEmiGbETmCpGnLyYqXxRCpK2yRJ5ZVxRc6Ccboc+XIoS4xXn0twPlZSHHarVpz+yPSL9Idts9xYIsULxeocXk2OnQXk7CpGdhWFGlGWWK6kZ+AlzqKhBjA5AWLYvEDjSLlxNGH+X7abl8hRvCo4C7KrCNSBCqqI+/lXyvpK+hluk+VK+AB3qcqNW03u7NmzCZKk8XzsLGqxq2KUJGZ/ZSbCbj1Vq7SKQT2KKfMSS1YMqMXk0OmRELlIvaTMO0td9CmnUkVdNynzeKFmQn+1sUXk+JmJkydPjkMDeK2ye4fcVmgCSkpspYaVrgSyr5zktW56mlUNJYkZ1276COC3bbsb6oTQMMR7hVZDKl3Xu8vdKBh+ZqOr3Gw1BilZph3HwqTbDwnNRIU4Ji7xnnsIHKyhRlC2nw+4Nffqm4GyxJw4FOMegg/VZC0qaVIxR1qqUzTk3epFxVxRLuEwT05T28vKbPypmuS4EhjYMzRpUjGKgSYV86A+c4OqrYHijN155JIEvAydkOBJMxnIQIDG7Ce1HWUJMympqGxpILjXCudzFbcGYHZ+Gl31POwA1WRvKZbCSPXRGCfiw61s3piaMV9e0cLPzk8N19TMMdLTMmSKSqqj8tIBgUlyFzeQPqXOuPSAuRXWY9AMaCJEczE27RS4a9al6t8bHBeuNMAtXtaUNUupdFpEoR3iWsi6E4A8lLQSrbTnNUXdqhjcF+zKH0/fnP4XXjO4IrZ9+5H2zZuW/ZiBd5WQm6lm6nplkIYl+nlm+XzJbLsvGY9/8xzWEBWJHdx7ZJPU6c+o1dZDIzuK71EhWJBSaaL6MSVm92Zvx+7BGqAkMSOhDeldgGJH4aIWjy0fJuWKfkKTfbb6mYEvQ2+3CeiiksevpPSjwHbzAoS/Vzo7rrVagq8QYykpmTmoHClQMrz44NnSnfv3v10Cl9i27euOnk0dPQhyt0bcwNeWBd767tbUL9AivESsf3fwQ2GBaeKwhDJt6sbNBhzDPnIwXcvi02VURvIK5OLcwtVFaAEKxIpJUWy5c/3W1R+gSRjcNbRD+/RePm4VOYt/bPvIBkvKQ7kLcnFm/uptaCIePLn7tPe9j6lKUNsEii1b3v8o++jPu0/BQ1jsKLoxEyJb6GBS1zxazYd//Zbu7d3+H33B8FsatnzQ+8nj3//41TOHIt7pWt7BjgK1fn7NYxWZ/T52r00L40BWlpZ3gYcQ1orOaqWz6Ta8Ai1A1/O2RV5EjVYW3qB2/A+0+vLfp417gwAAAABJRU5ErkJggg==') no-repeat right;
   background-size: 90%;
 }
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 .txt-date-h{
   width: 26%;
   height: 45px;
@@ -734,7 +804,7 @@
 .btn-delete-h {
   display: flex;
   justify-content: center;
-  padding-top: 14px;
+  padding-top: 6px;
   cursor: pointer;
   border-bottom: 2px solid #FCAF16;
   color: black;
