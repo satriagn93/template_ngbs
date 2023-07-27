@@ -3,35 +3,28 @@
 
 <head>
     <meta charset="utf-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <title>
+        Homepage- BCM
     </title>
-
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta http-equiv="default-src 'none'; img-src 'self';">
 
-    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
-    <!--[if IE]>
-		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-	<![endif]-->
+    <link rel="apple-touch-icon" href="../../../library/images/apple-icon-touch.png">
+    <link rel="icon" href="../../../favicon.png">
 
     <meta name="msapplication-TileColor" content="#f01d4f">
-    <meta name="msapplication-TileImage"
-        content="">
+    <meta name="msapplication-TileImage" content="../../../library/images/win8-tile-icon.png">
 
     <link rel="pingback" href="">
 
 
-
     <script src="https://kit.fontawesome.com/169e626d97.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
@@ -39,46 +32,133 @@
     <!-- <script src="https://kit.fontawesome.com/169e626d97.js" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <link href="../../sbadmin2/vendor/fontawesome-free/css/all.min.css"
-        rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-    <link href="../../sbadmin2/css/sb-admin-2.min.css" rel="stylesheet">
 
-    <link href="../../sbadmin2/vendor/datatables/dataTables.bootstrap4.min.css"
-        rel="stylesheet">
 
-    <link href="../../library/css/chart/charts.min.css" rel="stylesheet"
-        media="all">
+    <link href="../../../sbadmin2/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
-    <link href="../../library/css/style-global.css" rel="stylesheet" media="all">
-    <link href="../../library/css/style-edi.css" rel="stylesheet" media="all">
+    <link href="../../../sbadmin2/css/sb-admin-2.min.css" rel="stylesheet">
+
+    <link href="../../../library/css/select2.min.css" rel="stylesheet">
+
+    <link href="../../../sbadmin2/css/sb-admin-2.min.css" rel="stylesheet">
+
+    <link href="../../../owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../../../owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+
+
+    <link href="../../../sbadmin2/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <link href="../../../library/css/chart/charts.min.css" rel="stylesheet" media="all">
+
+    <!-- <link href="../../../sbadmin2/css/sb-admin-2.min.css" rel="stylesheet">
+
+        <link href="../../../sbadmin2/css/sb-admin-2.min.css" rel="stylesheet"> -->
+
+    <link href="../../../library/css/style-global.css" rel="stylesheet" media="all">
+    <link href="../../../library/css/style-edi.css" rel="stylesheet" media="all">
     <!--     <link href="<?php echo get_template_directory_uri(); ?>/library/css/style-chela.css" rel="stylesheet" media="all">
     <link href="<?php echo get_template_directory_uri(); ?>/library/css/style-offi.css" rel="stylesheet" media="all"> -->
-    <link href="../../library/css/style-harris.css" rel="stylesheet" media="all">
-    <!-- <link href="../../library/css/style-satria.css" rel="stylesheet" media="all"> -->
+    <link href="../../../library/css/style-harris.css" rel="stylesheet" media="all">
+    <link href="../../../library/css/style-satria.css" rel="stylesheet" media="all">
+
+    <script src="../../../library/js/select2.min.js"></script>
+
+    <script src="../../../owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="../../../sbadmin2/vendor/datatables/jquery.dataTables.min.js"></script>
+
+    <script src="../../../sbadmin2/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
 </head>
+<style type="text/css">
+    .select2-container--open .select2-dropdown {
+        margin-left: 10px;
+        margin-top: 5px;
+        border-top: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 5px;
+    }
+</style>
 
-<body id="body" data-hurl="">
+<body id="body">
+
     <div id="body_container">
-        <!-- =================include================== -->
-        <header_home_bcm></header_home_bcm>
-        <!-- =================include================== -->
+
+        <header class="headerTop" role="banner">
+
+            <div class="row row_topLogo">
+                <div class="col_topLogo1 col_topLogo">
+                    <a href="">
+                        <div class="img_topLogo">
+                            <img src="../../../library/images/main_logo.png" alt="NGBS">
+                        </div>
+                    </a>
+                </div>
+                <div class="col_topLogo2">
+                    <select class="sel_yellow sel_typeTopLogo" name="" id="">
+                        <option value="scf">Supply Chain Financing</option>
+                        <option value="bcm" selected>Cash Management</option>
+                        <option value="va">Virtual Account</option>
+                    </select>
+                </div>
+                <div class="col_topLogo3">
+                    <div class="field_search_topLogo">
+                        <input type="text" class="txt_search_topLogo"
+                            placeholder="Search for functions, recipients, or favorites here">
+                        <span class="bx_ico_search_submit"><i class="ico_search"></i></span>
+                    </div>
+                </div>
+                <div class="col_topLogo4">
+                    <div class="img_notification_topLogo">
+                        <span class="bx_ico_notification"><i class="ico_notification"></i></span>
+                        <span class="bx_count_notification">2</span>
+                    </div>
+                </div>
+                <div class="col_topLogo5">
+                    <div class="bx_icoProfile_topLogo">
+                        SJ
+                    </div>
+                </div>
+                <div class="col_topLogo6">
+                    <div class="bx_nameProfile_topLogo">
+                        <div class="ht_nameProfile">PT. Semesta Jaya Abadi</div>
+                        <div class="ht_statusProfile">Maker</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row row_topMenu">
+                <div class="col-md-12 col_topMenu">
+                    <ul class="ul_topMenu">
+                        <li class="w_small act"><a href="">OVERVIEW</a></li>
+                        <li class="w_normal"><a href="">TRANSACTION</a></li>
+                        <li class="w_normal"><a href="">LOANS</a></li>
+                        <li class="w_normal"><a href="">CARDS</a></li>
+                        <li class="w_normal"><a href="">FX AND TRADE</a></li>
+                        <li class="w_long"><a href="">REPORT AND INFORMATION</a></li>
+                        <li class="w_small"><a href="">ACCOUNTS</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
         <div class="row row_bodyHomePage">
             <div class="col-md-12 col_bodyHomePage">
-        
+
                 <div class="bx_ht_homePage">
                     <div class="htdate_homePage">Last login: 5 April 2023 - 8:31</div>
                     <h1 class="ht_homePage">Overview</h1>
                     <div class="htsub_homePage">Welcome back, <b>PT. Semesta Jaya Abadi</b></div>
                 </div>
-        
+
                 <div class="row">
                     <div class="col-md-8">
-        
+
                         <div class="row">
                             <div class="col-md-12">
-        
+
                                 <div class="bx_standHome_auto bx_home_invoice">
                                     <div class="row">
                                         <div class="col-md-6 col_standHome">
@@ -95,12 +175,12 @@
                                                 <div class="a_standHome">More Details</div>
                                             </a>
                                         </div>
-        
+
                                         <div class="col-md-12 col_standHome">
-        
+
                                             <div class="row">
                                                 <div class="col-md-4 col_standHome">
-        
+
                                                     <div class="bx_point_homeChart">
                                                         <span class="ico_squere_homeChart ico_pie_1"></span>
                                                         <div class="ht_balance_homeChart">Asset (All Currency)</div>
@@ -108,7 +188,7 @@
                                                                 class="balance_ammount act">116.400.000</span> <span
                                                                 class="ico_hideAmount"></span></div>
                                                     </div>
-        
+
                                                     <div class="bx_point_homeChart">
                                                         <span class="ico_squere_homeChart ico_pie_2"></span>
                                                         <div class="ht_balance_homeChart">Liabilty</div>
@@ -116,15 +196,16 @@
                                                                 class="balance_ammount act">73.000.000</span> <span
                                                                 class="ico_hideAmount"></span></div>
                                                     </div>
-        
-                                                    <div id="btnHideAmount" class="bx_hide_homeChart" onclick="hideAmount()">
+
+                                                    <div id="btnHideAmount" class="bx_hide_homeChart"
+                                                        onclick="hideAmount()">
                                                         Hide Amount
                                                     </div>
-        
+
                                                 </div>
-        
+
                                                 <div class="col-md-8 ">
-        
+
                                                     <table id="bcmHomeBar"
                                                         class="charts-css column show-labels show-data-on-hover show-primary-axis  show-4-secondary-axes multiple data-spacing-12 datasets-spacing-3">
                                                         <caption>Years Compared</caption>
@@ -154,7 +235,8 @@
                                                                     <!-- <span class="data"> 50 </span>  -->
                                                                     <span class="tooltip">
                                                                         Day 2 <br />
-                                                                        <span class="tp_price">Rp 40.500.000</span><br />
+                                                                        <span class="tp_price">Rp
+                                                                            40.500.000</span><br />
                                                                         <span class="tp_persmall"><b>+12%</b> of monthly
                                                                             target</span>
                                                                     </span>
@@ -165,155 +247,173 @@
                                                                     <span class="ico_th_row"></span>
                                                                     <span class="in_th_row">22 Dec</span>
                                                                 </th>
-                                                                <td style="--size: 0.4;"> <span class="data"> 40 </span> </td>
-                                                                <td style="--size: 0.6;"> <span class="data"> 60 </span> </td>
+                                                                <td style="--size: 0.4;"> <span class="data"> 40 </span>
+                                                                </td>
+                                                                <td style="--size: 0.6;"> <span class="data"> 60 </span>
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <th class="homeBar_th_row" scope="row">
                                                                     <span class="ico_th_row"></span>
                                                                     <span class="in_th_row">23 Dec</span>
                                                                 </th>
-                                                                <td style="--size: 0.2;"> <span class="data"> 20 </span> </td>
-                                                                <td style="--size: 0.8;"> <span class="data"> 80 </span> </td>
+                                                                <td style="--size: 0.2;"> <span class="data"> 20 </span>
+                                                                </td>
+                                                                <td style="--size: 0.8;"> <span class="data"> 80 </span>
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <th class="homeBar_th_row" scope="row">
                                                                     <span class="ico_th_row"></span>
                                                                     <span class="in_th_row">24 Dec</span>
                                                                 </th>
-                                                                <td style="--size: 0.7;"> <span class="data"> 80 </span> </td>
-                                                                <td style="--size: 0.4;"> <span class="data"> 40 </span> </td>
+                                                                <td style="--size: 0.7;"> <span class="data"> 80 </span>
+                                                                </td>
+                                                                <td style="--size: 0.4;"> <span class="data"> 40 </span>
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <th class="homeBar_th_row" scope="row">
                                                                     <span class="ico_th_row"></span>
                                                                     <span class="in_th_row">25 Dec</span>
                                                                 </th>
-                                                                <td style="--size: 0.6;"> <span class="data"> 60 </span> </td>
-                                                                <td style="--size: 0.3;"> <span class="data"> 30 </span> </td>
+                                                                <td style="--size: 0.6;"> <span class="data"> 60 </span>
+                                                                </td>
+                                                                <td style="--size: 0.3;"> <span class="data"> 30 </span>
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <th class="homeBar_th_row" scope="row">
                                                                     <span class="ico_th_row"></span>
                                                                     <span class="in_th_row">26 Dec</span>
                                                                 </th>
-                                                                <td style="--size: 0.2;"> <span class="data"> 20 </span> </td>
-                                                                <td style="--size: 0.4;"> <span class="data"> 40 </span> </td>
+                                                                <td style="--size: 0.2;"> <span class="data"> 20 </span>
+                                                                </td>
+                                                                <td style="--size: 0.4;"> <span class="data"> 40 </span>
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <th class="homeBar_th_row" scope="row">
                                                                     <span class="ico_th_row"></span>
                                                                     <span class="in_th_row">27 Dec</span>
                                                                 </th>
-                                                                <td style="--size: 0.6;"> <span class="data"> 60 </span> </td>
-                                                                <td style="--size: 0.9;"> <span class="data"> 90 </span> </td>
+                                                                <td style="--size: 0.6;"> <span class="data"> 60 </span>
+                                                                </td>
+                                                                <td style="--size: 0.9;"> <span class="data"> 90 </span>
+                                                                </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
-        
+
                                                 </div>
                                             </div>
-        
+
                                         </div>
-        
+
                                     </div>
-        
+
                                 </div>
-        
+
                             </div>
                             <div class="col-md-6">
-        
+
                                 <div class="bx_standHome_bcm bx_home_activity">
                                     <div class="ht_standHome">CONVERSION</div>
-        
+
                                     <div class="row row_listCurrency">
                                         <div class="col-md-6 col_listCurrency col_l_lc">
-        
+
                                             <div class="bodyListCurrency">
                                                 <span id="changeCurrency" class="ico_conversion"></span>
-        
+
                                                 <div class="bxt_listCurrency">
                                                     <input type="number" class="txt_listCurrency onlynumber"
                                                         name="value_fromCurrency" value="1">
                                                     <span id="fromCurrency" class="open_ListCurrency">USD</span>
                                                     <span id="dp_fromCurrency" class="ico_dropCurrency"></span>
                                                 </div>
-        
+
                                                 <select id="from_selListCurrency" class="sel_currency">
-                                                    <option value="USD" selected data-image="">USD - US
+                                                    <option value="USD" selected data-image="../../../library/images/flag_usa.png">
+                                                        USD - US
                                                         Dollar</option>
-                                                    <option value="GBP" data-image="">GBP - British
+                                                    <option value="GBP" data-image="../../../library/images/flag_uk.png">GBP -
+                                                        British
                                                         Dollar</option>
-                                                    <option value="SGD" data-image="">SGD - Singapore
+                                                    <option value="SGD" data-image="../../../library/images/flag_sg.png">SGD -
+                                                        Singapore
                                                         Dollar</option>
                                                 </select>
                                             </div>
-        
+
                                             <div class="bxt_listCurrency">
                                                 <div class="bx_listCurrency">
-                                                    <img src="" alt="NGBS"> <span>1 USD = IDR
+                                                    <img src="../../../library/images/flag_usa.png" alt="NGBS"> <span>1 USD = IDR
                                                         14.560,90</span>
                                                 </div>
                                                 <div class="bx_listCurrency">
-                                                    <img src="" alt="NGBS"> <span>1 GBP = IDR
+                                                    <img src="../../../library/images/flag_uk.png" alt="NGBS"> <span>1 GBP = IDR
                                                         18.220,69</span>
                                                 </div>
                                                 <div class="bx_listCurrency">
-                                                    <img src="" alt="NGBS"> <span>1 SGD = IDR
+                                                    <img src="../../../library/images/flag_sg.png" alt="NGBS"> <span>1 SGD = IDR
                                                         10.591,90</span>
                                                 </div>
                                             </div>
-        
+
                                         </div>
                                         <div class="col-md-6 col_listCurrency col_r_lc">
-        
+
                                             <div class="bodyListCurrency">
-        
+
                                                 <div class="bxt_listCurrency">
                                                     <input type="number" class="txt_listCurrency onlynumber" readonly
                                                         name="value_toCurrency" value="15.120">
                                                     <span id="toCurrency" class="open_ListCurrency">Rp</span>
                                                     <span id="dp_toCurrency" class="ico_dropCurrency"></span>
                                                 </div>
-        
+
                                                 <select id="to_selListCurrency" class="sel_currency">
-                                                    <option value="IDR" selected data-image="">IDR -
+                                                    <option value="IDR" selected data-image="../../../library/images/flag_ina.png">
+                                                        IDR -
                                                         Indonesia Dollar</option>
-                                                    <option value="YEN" data-image="">YEN - Japan Dollar
+                                                    <option value="YEN" data-image="../../../library/images/flag_jp.png">YEN - Japan
+                                                        Dollar
                                                     </option>
-                                                    <option value="SGD" data-image="">SGD - Singapore
+                                                    <option value="SGD" data-image="../../../library/images/flag_sg.png">SGD -
+                                                        Singapore
                                                         Dollar</option>
                                                 </select>
                                             </div>
-        
+
                                             <div class="bxt_listCurrency">
                                                 <div class="bx_listCurrency">
-                                                    <img src="" alt="NGBS"> <span>1 USD = IDR
+                                                    <img src="../../../library/images/flag_usa.png" alt="NGBS"> <span>1 USD = IDR
                                                         14.560,90</span>
                                                 </div>
                                                 <div class="bx_listCurrency">
-                                                    <img src="" alt="NGBS"> <span>1 JPY = IDR
+                                                    <img src="../../../library/images/flag_jp.png" alt="NGBS"> <span>1 JPY = IDR
                                                         108,85</span>
                                                 </div>
                                                 <div class="bx_listCurrency">
-                                                    <img src="" alt="NGBS"> <span>1 CNY = IDR
+                                                    <img src="../../../library/images/flag_cn.png" alt="NGBS"> <span>1 CNY = IDR
                                                         2.088,90</span>
                                                 </div>
                                             </div>
-        
+
                                         </div>
                                     </div>
-        
+
                                 </div>
-        
+
                             </div>
                             <div class="col-md-6">
-        
+
                                 <div class="bx_standHome_bcm bx_home_activity">
                                     <div class="ht_standHome">QUICK TRANSACTION</div>
-        
+
                                     <div class="bx_form_qTrans">
-        
+
                                         <div class="bx_f_qTrans">
                                             <label class="label_qTrans">Receipent</label>
                                             <div class="bx_in_qTrans sel_in_qTrans">
@@ -323,8 +423,8 @@
                                                     <option value="tea">Tea</option>
                                                     <option value="milk">Milk</option>
                                                 </select>
-        
-        
+
+
                                                 <div class="bx_pymth tab_transfer act">
                                                     <label class="cont_rad" data-type="tab_bca">Online
                                                         <input type="radio" checked="checked" name="transfer_type"
@@ -332,17 +432,17 @@
                                                         <span class="ckm"><span class="cir"></span></span>
                                                     </label>
                                                 </div>
-        
+
                                                 <div class="bx_pymth tab_va">
                                                     <label class="cont_rad" data-type="tab_va">Inhouse
                                                         <input type="radio" name="transfer_type" value="inhouse">
                                                         <span class="ckm"><span class="cir"></span></span>
                                                     </label>
                                                 </div>
-        
+
                                             </div>
                                         </div>
-        
+
                                         <div class="bx_f_qTrans">
                                             <label class="label_qTrans">Amount</label>
                                             <div class="bx_in_qTrans">
@@ -350,7 +450,7 @@
                                                     placeholder="Rp 0" value="">
                                             </div>
                                         </div>
-        
+
                                         <div class="bx_f_qTrans">
                                             <label class="label_qTrans">Notes (optional)</label>
                                             <div class="bx_in_qTrans">
@@ -358,27 +458,27 @@
                                                     placeholder="e.g. Last month payment" value="">
                                             </div>
                                         </div>
-        
+
                                         <div class="bx_f_qTrans right">
                                             <button class="btn_submit_qTrans">Create Transaction</button>
                                         </div>
-        
-        
+
+
                                     </div>
-        
+
                                 </div>
-        
+
                             </div>
                         </div>
-        
-        
+
+
                     </div>
                     <div class="col-md-4">
                         <div class="bx_standHome_bcm bx_home_activity">
                             <div class="ht_standHome">TASK</div>
-        
+
                             <div class="row row_home_activity">
-        
+
                                 <div class="col-md-6 col_home_activity">
                                     <div class="bx_inHome_task task_pending">
                                         <div class="htCount_task">12 <span class="task_circle"></span></div>
@@ -391,22 +491,22 @@
                                         <div class="htStatus_task">Ongoing</div>
                                     </div>
                                 </div>
-        
+
                             </div>
-        
+
                         </div>
-        
+
                         <div class="bx_standHome_bcm bx_htodo">
                             <div class="ht_standHome">TO DO</div>
-        
+
                             <div class="htodo_more">More Details</div>
-        
+
                             <div class="htodo_month">July 2023</div>
-        
+
                             <div class="htodo_slide_day">
-        
+
                                 <div id="slide_todo" class="owl-carousel owl-theme popup-gallery">
-        
+
                                     <div class="item">
                                         <div class="htodo_bx_todo act">
                                             <div class="htodo_in_days">Fri</div>
@@ -453,212 +553,214 @@
                                         <div class="htodo_in_days">Tue</div>
                                         <div class="htodo_count_days">18</div>
                                     </div>
-        
+
                                 </div>
-        
-        
+
+
                             </div>
-        
-        
+
+
                             <div class="htodo_bodyList">
-        
+
                                 <div class="form-check htodo_list">
-                                    <input class="form-check-input" type="checkbox" name="check_todor" value="" id="ck_1">
+                                    <input class="form-check-input" type="checkbox" name="check_todor" value=""
+                                        id="ck_1">
                                     <label class="form-check-label" for="ck_1">
                                         Transfer to PT. Arunika Loise Persada pk 17.00 WIB
                                     </label>
                                 </div>
                                 <div class="form-check htodo_list">
-                                    <input class="form-check-input" type="checkbox" name="check_todor" value="" id="ck_2">
+                                    <input class="form-check-input" type="checkbox" name="check_todor" value=""
+                                        id="ck_2">
                                     <label class="form-check-label" for="ck_2">
                                         Confirm to approver about payment for PT. Neo Kosmetika Industr...
                                     </label>
                                 </div>
                                 <div class="form-check htodo_list">
-                                    <input class="form-check-input" type="checkbox" name="check_todor" value="" id="ck_3">
+                                    <input class="form-check-input" type="checkbox" name="check_todor" value=""
+                                        id="ck_3">
                                     <label class="form-check-label" for="ck_3">
                                         Ini note dari bbrpa hari lalu, tp note ini muncul di hari target (hari future)
                                     </label>
                                 </div>
                                 <div class="form-check htodo_list">
-                                    <input class="form-check-input" type="checkbox" name="check_todor" value="" id="ck_4">
+                                    <input class="form-check-input" type="checkbox" name="check_todor" value=""
+                                        id="ck_4">
                                     <label class="form-check-label" for="ck_4">
                                         Ini note dari bbrpa hari lalu, tp note ini muncul di hari target (hari future)
                                     </label>
                                 </div>
                                 <div class="form-check htodo_list">
-                                    <input class="form-check-input" type="checkbox" name="check_todor" value="" id="ck_5">
+                                    <input class="form-check-input" type="checkbox" name="check_todor" value=""
+                                        id="ck_5">
                                     <label class="form-check-label" for="ck_5">
                                         Transfer to PT. Arunika Loise Persada pk 17.00 WIB
                                     </label>
                                 </div>
-        
-        
+
+
                             </div>
-        
+
                         </div>
-        
+
                     </div>
                 </div>
-        
-        
-        
+
+
+
             </div>
         </div>
 
-    </div>
-</body>
-<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-<script src="../../owlcarousel/owl.carousel.js"></script>
-<script>
-    $(document).ready(function () {
 
-        if ($("#slide_todo").length > 0) {
+        <script>
 
-            $('#slide_todo').owlCarousel({
-                // center: true,
-                loop: false,
-                margin: 20,
-                nav: false,
-                dots: false,
-                items: 7,
-                responsive: {
-                    0: {
-                        items: 4
-                    },
-                    600: {
-                        items: 7
-                    },
+
+            $(document).ready(function () {
+
+                if ($("#slide_todo").length > 0) {
+
+                    $('#slide_todo').owlCarousel({
+                        // center: true,
+                        loop: false,
+                        margin: 20,
+                        nav: false,
+                        dots: false,
+                        items: 7,
+                        responsive: {
+                            0: {
+                                items: 4
+                            },
+                            600: {
+                                items: 7
+                            },
+                        }
+                    })
+
+                    // var owl = $('#slide_productBanner');
+                    // owl.owlCarousel();
+                    // // Go to the next item
+                    // $('.slide_NextBtn').click(function() {
+                    //     owl.trigger('next.owl.carousel');
+                    // })
+                    // // Go to the previous item
+                    // $('.slide_PrevBtn').click(function() {
+                    //     // With optional speed parameter
+                    //     // Parameters has to be in square bracket '[]'
+                    //     owl.trigger('prev.owl.carousel', [300]);
+                    // })
+
                 }
-            })
-
-            // var owl = $('#slide_productBanner');
-            // owl.owlCarousel();
-            // // Go to the next item
-            // $('.slide_NextBtn').click(function() {
-            //     owl.trigger('next.owl.carousel');
-            // })
-            // // Go to the previous item
-            // $('.slide_PrevBtn').click(function() {
-            //     // With optional speed parameter
-            //     // Parameters has to be in square bracket '[]'
-            //     owl.trigger('prev.owl.carousel', [300]);
-            // })
-
-        }
 
 
-        if ($(".jsselect").length > 0) {
-            $('.jsselect').select2();
-        }
-
-        var table = $('.datTable').DataTable({
-            paging: true, // Enable pagination
-            // lengthMenu: [5, 10, 25, 50], // Number of items per page options
-            pageLength: 5, // Initial number of items per page
-            lengthChange: false,
-            searching: false,
-            // info: false,
-            language: {
-                paginate: {
-                    previous: '<i class="ico_arrow_left_1"></i>', // Custom previous button text
-                    next: '<i class="ico_arrow_right_1"></i>' // Custom next button text
+                if ($(".jsselect").length > 0) {
+                    $('.jsselect').select2();
                 }
-            }
-        });
 
-        fetch("../header-bcm.html")
-            .then(response => {
-                return response.text()
-            })
-            .then(data => {
-                document.querySelector("header_home_bcm").innerHTML = data;
+                var table = $('.datTable').DataTable({
+                    paging: true, // Enable pagination
+                    // lengthMenu: [5, 10, 25, 50], // Number of items per page options
+                    pageLength: 5, // Initial number of items per page
+                    lengthChange: false,
+                    searching: false,
+                    // info: false,
+                    language: {
+                        paginate: {
+                            previous: '<i class="ico_arrow_left_1"></i>', // Custom previous button text
+                            next: '<i class="ico_arrow_right_1"></i>' // Custom next button text
+                        }
+                    }
+                });
+
             });
-    })
 
-    function hideAmount() {
+            function hideAmount() {
 
-            if ($('#btnHideAmount').hasClass('act')) {
-                $('#btnHideAmount').removeClass('act').empty().append('Hide Amount');
-                $('.ico_hideAmount').removeClass('act');
-                $('.balance_ammount').addClass('act');
-                console.log('ada nih');
-            } else {
-                $('#btnHideAmount').addClass('act').empty().append('Unhide Amount');
-                $('.balance_ammount').removeClass('act');
-                $('.ico_hideAmount').addClass('act');
-                console.log('ga ada nih');
-            }
-        }
-
-
-
-        // ====> Currency JS <==== 
-
-        $("#fromCurrency, #dp_fromCurrency").on("click", function () {
-            $('#from_selListCurrency').select2("open");
-        });
-
-        $("#from_selListCurrency").select2({
-            templateResult: f_formatState,
-            templateSelection: f_formatValue
-        });
-
-        function f_formatState(opt) {
-            if (!opt.id) {
-                return opt.text;
+                if ($('#btnHideAmount').hasClass('act')) {
+                    $('#btnHideAmount').removeClass('act').empty().append('Hide Amount');
+                    $('.ico_hideAmount').removeClass('act');
+                    $('.balance_ammount').addClass('act');
+                    console.log('ada nih');
+                } else {
+                    $('#btnHideAmount').addClass('act').empty().append('Unhide Amount');
+                    $('.balance_ammount').removeClass('act');
+                    $('.ico_hideAmount').addClass('act');
+                    console.log('ga ada nih');
+                }
             }
 
-            var optimage = $(opt.element).attr('data-image');
-            console.log(optimage)
-            if (!optimage) {
-                return opt.text;
-            } else {
-                var $opt = $(
-                    '<img src="' + optimage + '" /> <span>' + opt.text + '</span>'
-                );
-                return $opt;
-            }
-        };
-
-        function f_formatValue(opt) {
-            if (!opt.id) {
-                return opt.text;
-            }
-            var opt_value = opt.id;
-
-            $('#fromCurrency').empty().append(opt_value);
-
-            return opt_value;
-
-        };
-
-        $("#toCurrency, #dp_toCurrency").on("click", function () {
-            $('#to_selListCurrency').select2("open");
-        });
-
-        $("#to_selListCurrency").select2({
-            templateResult: f_formatState,
-            templateSelection: t_formatValue
-        });
-
-        function t_formatValue(opt) {
-            if (!opt.id) {
-                return opt.text;
-            }
-            var opt_value = opt.id;
-
-            $('#toCurrency').empty().append(opt_value);
-
-            return opt_value;
-
-        };
 
 
-        $('#changeCurrency').click(function () {
+            // ====> Currency JS <==== 
 
-        });
-</script>
+            $("#fromCurrency, #dp_fromCurrency").on("click", function () {
+                $('#from_selListCurrency').select2("open");
+            });
+
+            $("#from_selListCurrency").select2({
+                templateResult: f_formatState,
+                templateSelection: f_formatValue
+            });
+
+            function f_formatState(opt) {
+                if (!opt.id) {
+                    return opt.text;
+                }
+
+                var optimage = $(opt.element).attr('data-image');
+                console.log(optimage)
+                if (!optimage) {
+                    return opt.text;
+                } else {
+                    var $opt = $(
+                        '<img src="' + optimage + '" /> <span>' + opt.text + '</span>'
+                    );
+                    return $opt;
+                }
+            };
+
+            function f_formatValue(opt) {
+                if (!opt.id) {
+                    return opt.text;
+                }
+                var opt_value = opt.id;
+
+                $('#fromCurrency').empty().append(opt_value);
+
+                return opt_value;
+
+            };
+
+            $("#toCurrency, #dp_toCurrency").on("click", function () {
+                $('#to_selListCurrency').select2("open");
+            });
+
+            $("#to_selListCurrency").select2({
+                templateResult: f_formatState,
+                templateSelection: t_formatValue
+            });
+
+            function t_formatValue(opt) {
+                if (!opt.id) {
+                    return opt.text;
+                }
+                var opt_value = opt.id;
+
+                $('#toCurrency').empty().append(opt_value);
+
+                return opt_value;
+
+            };
+
+
+            $('#changeCurrency').click(function () {
+
+            });
+
+
+// ====> Currency JS <==== 
+
+        </script>
+
+</body>
 
 </html>

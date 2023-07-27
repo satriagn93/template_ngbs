@@ -21,19 +21,19 @@
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link href="../../../sbadmin2/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="../../../sbadmin2/css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="../../../sbadmin2/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-    <link href="../../../library/css/style-global.css" rel="stylesheet" media="all">
-    <link href="../../../library/css/style-edi.css" rel="stylesheet" media="all">
-    <link href="../../../library/css/style-chela.css" rel="stylesheet" media="all">
-    <link href="../../../library/css/style-offi.css" rel="stylesheet" media="all">
-    <link href="../../../library/css/style-harris.css" rel="stylesheet" media="all">
-    <link href="../../../library/css/style-junest.css" rel="stylesheet" media="all">
-    <link href="../../../library/css/style-bella.css" rel="stylesheet" media="all">
-    <link href="../../../library/css/style-ilham.css" rel="stylesheet" media="all">
-    <link href="../../../library/css/style-satria.css" rel="stylesheet" media="all">
-    <link href="../../../library/css/style-aditya.css" rel="stylesheet" media="all">
+    <link href="../../../../sbadmin2/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../../../../sbadmin2/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../../../../sbadmin2/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="../../../../library/css/style-global.css" rel="stylesheet" media="all">
+    <link href="../../../../library/css/style-edi.css" rel="stylesheet" media="all">
+    <link href="../../../../library/css/style-chela.css" rel="stylesheet" media="all">
+    <link href="../../../../library/css/style-offi.css" rel="stylesheet" media="all">
+    <link href="../../../../library/css/style-harris.css" rel="stylesheet" media="all">
+    <link href="../../../../library/css/style-junest.css" rel="stylesheet" media="all">
+    <link href="../../../../library/css/style-bella.css" rel="stylesheet" media="all">
+    <link href="../../../../library/css/style-ilham.css" rel="stylesheet" media="all">
+    <link href="../../../../library/css/style-satria.css" rel="stylesheet" media="all">
+    <link href="../../../../library/css/style-aditya.css" rel="stylesheet" media="all">
     <style>
         .pagination .page-item .page-link {
             background: transparent padding-box;
@@ -104,8 +104,7 @@
                         </div>
                         <div style="position: absolute; right:10px; width: 200px">
                             <div>
-                                <button onclick="modalAdd()" class="o-btn-add-bulk-chekerList">+ Add Bulk
-                                    Registration Invoice</button>
+                                <button onclick="modalAdd()" class="o-btn-add-bulk-chekerList">+ Add New Company User</button>
                             </div>
                         </div>
                     </div>
@@ -142,7 +141,7 @@
         <div class="modal-content-s">
             <div class="row">
                 <div class="col-sm-2">
-                    <img style="width: 100%;" src="../../../library/images/tandatanya.png" alt="Girl in a jacket">
+                    <img style="width: 100%;" src="../../../../library/images/tandatanya.png" alt="Girl in a jacket">
                 </div>
                 <div class="col-sm-8">
                     <h5><b>Are you sure to add new company user?</b></h5>
@@ -228,7 +227,7 @@
             }
         });
 
-        fetch("../../header-normal-bcm.html")
+        fetch("../../../header-normal-bcm.html")
             .then(response => {
                 return response.text()
             })
