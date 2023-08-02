@@ -2,6 +2,18 @@
 <html>
 
 <head>
+    <!-- ============================tab======================= -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        <!-- ============================tab======================= -->
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title></title>
@@ -65,6 +77,37 @@
             font-weight: 500px;
             color: #000000;
         }
+
+        
+
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.inactive {
+        border-top: #f2f0f0;
+        border-right: #f2f0f0;
+        border-left: #f2f0f0;
+        border-bottom: 4px solid rgb(221 223 235);
+        background-color: #f2f0f0;
+        width: 270px;
+        text-align: center;
+        color: #5f5f5f;
+        }
+
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+        border-top: #f2f0f0;
+        border-right: #f2f0f0;
+        border-left: #f2f0f0;
+        border-bottom: 4px solid #f3a600;
+        background-color: #f2f0f0;
+        width: 270px;
+        text-align: center;
+        color: #121111;
+        }
+
+        .nav-title{
+            font-weight: bold;
+        }
+
     </style>
 </head>
 
@@ -129,8 +172,7 @@
         </div>
         <!-- =================include================== -->
         <div id="divCreate" style="display: none;"></div>
-        <div id="divDetail" style="display: none;"></div>
-        <div id="divApprove" style="display: none;"></div>
+        <div id="formTransaction" style="display: none;"></div>
         <!-- =================include================== -->
     </div>
 
@@ -159,13 +201,12 @@
     </div>
 </body>
 <script>
+
     $(document).ready(function () {
 
         $("#divCreate").load("create.html");
 
-        $("#divDetail").load("detail.html");
-
-        $("#divApprove").load("approve.html");
+        $("#formTransaction").load("createTransaction.html");
 
         loopdata();
         var table = $('.datTable').DataTable({
@@ -236,8 +277,7 @@
 
     var listIndex = document.getElementById("listIndex");
     var divCreate = document.getElementById("divCreate");
-    var divDetail = document.getElementById("divDetail");
-    var divApprove = document.getElementById("divApprove");
+    var formTransaction = document.getElementById("formTransaction");
 
     // ==============MODAL CREATE==============
     function modalAdd() {
@@ -252,20 +292,7 @@
         $('#modalAdd').hide();
         listIndex.style.display = "none";
         divCreate.style.display = "block";
-    }
-
-    function submitCreate() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-        divCreate.style.display = "none";
-        divDetail.style.display = "block";
-    }
-
-    function submitToApprove() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-        divDetail.style.display = "none";
-        divApprove.style.display = "block";
+        formTransaction.style.display = "block";
     }
     // ==============MODAL CREATE==============
 
@@ -347,6 +374,7 @@
                   `)
         })
     }
+    
 </script>
 
 </html>

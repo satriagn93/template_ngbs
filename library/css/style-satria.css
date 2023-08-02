@@ -346,16 +346,16 @@ Multi steps indicator
   background-color: #efb029;
 }
 
-.divider2-inline-h {
+.divider2-inline-s {
   vertical-align: center;
   display: flex;
   flex-direction: row;
   margin-top: -10px;
 }
 
-.steper-inline-h {
+.steper-inline-s {
   height: 30px;
-  width: 30px;
+  width: 32px;
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -366,7 +366,7 @@ Multi steps indicator
   margin-left: .6em;
 }
 
-.inside-inline-h {
+.inside-inline-s {
   display: flex;
   justify-content: center;
   width: 19px;
@@ -376,9 +376,9 @@ Multi steps indicator
   background-color: #FCAF16;
 }
 
-.steper-inlineOff-h {
+.steper-inlineOff-s {
   height: 30px;
-  width: 30px;
+  width: 32px;
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -388,7 +388,7 @@ Multi steps indicator
   margin-left: .6em;
 }
 
-.inside-inlineOff-h {
+.inside-inlineOff-s {
   display: flex;
   justify-content: center;
   width: 19px;
@@ -398,7 +398,7 @@ Multi steps indicator
   background-color: lightgrey;
 }
 
-.line-inline-h {
+.line-inline-s {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -410,7 +410,7 @@ Multi steps indicator
   background-color: #FCAF16;
 }
 
-.line-inlineOff-h {
+.line-inlineOff-s {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -438,13 +438,14 @@ Multi steps indicator
 
 .div_center_s {
   margin-left: 9%;
+  margin-top: 20px;
 }
 
 .step_number_s {
-  margin-left: 32%;
-  margin-right: 27%;
-  margin-bottom: -50px;
-  margin-top: -20px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
 
 .o-box-default_s {
@@ -556,7 +557,7 @@ Multi steps indicator
   display: inline-block;
   position: relative;
   padding: 0 6px;
-  margin-left: 5px;
+  margin-left: 7px;
   margin-top: 5px;
 }
 

@@ -111,7 +111,7 @@ table.dataTable > thead .sorting_desc:after,
 table.dataTable > thead .sorting_asc_disabled:after,
 table.dataTable > thead .sorting_desc_disabled:after {
   right: 0.5em;
-  content: "↓";
+  content: "V";
 }
 table.dataTable > thead .sorting_asc:before,
 table.dataTable > thead .sorting_desc:after {
