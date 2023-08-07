@@ -1,3 +1,9 @@
+.i-doc-ico {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAS2SURBVHgB7ZvPTxtHFMe/bxav7V27uDE/Uhp+JOHHJVaToEpNLiVCai6hx177t/XaY0CqWomWqlXSA6moUFtK0jYIYmhhCY5tFnu9O50ZE2pIkIm8CzG7H8lrz86s5fedeW/Gb3cIr4HP3zcw3PkRanxMFPtByKId4bDEcVX8/gXKTjx8XRN65Zp/v7sOjX0uPhk4T0gxCNNHhTgkALe+/QxgkzjPeO4MdU9OvyweCMA356bAcA9hwKVZ6vn4S/mRyQO35m6FxniJxieVq2NfAOEfUwgbIs7xZ/cNTfU+4TbCRwxa7AVDzbuBsMLYKBND4RLCiod+1raLHD8QtjOEnEgAhJxIAIScSACEnEgAhJwOBIGdN3j5aQaeHTuuCRkDOzAGi2C6hzPEfwF2Frp4abm7WTNetQwUlxzqmlhBLO3gjPBXAKcYU8ZryeaG7QvFt3+8JFJUK2c1EvwVoPxnp3yjzHi+aa9mrm/JfJwS4Z+vr5BxZRua7qIZmukg2bcLnwgmBnSccEg3ilD8tRcn5SQj7IQEI8CbIEUwrxa8qpVg3Gk+K1W2DG6vZvjW3CD13v2rVdc5ewEkoifZSXszNVKgnaSjYo29bsIUM0kL+LsO6BD+SR0etHhzX26FeE89BjjP42gRf0eA7B3xQhsRrQThE7z4+zh51fTBiVhnHsbQ8kG9vdFHe6s3uWzD9BLFu/84VF96khMBblQVtKRFqeF54VIlBIx/LlAr9SE5MC/m6RLccoqX/75Nbi2O9PAidteGyF65xY2r31PyYh5VKytWgZ9gv54Xl8bh7mYpc2NGxI8KLz7O8cJvdyj74TQCxl8XkMbHUkUketfpws1pvpcfl6d5ZT0Hc3hOGS/Rs5Ysw7FGZJEqm9fIHH0ojVfl9Mgi4pmnYr2sI2CCiwGkV8G0CpxSGrXye1KUQ/WizF27S9ZzYlUlXOPlKSGC/I6ACTQIEvd0dOgVIiHE0d5UZXa8gVK4UyA4AWrlFGTPil7klNhG5fnhGzB2fohiqbzseSWUbN8Af/HLvdNwAV/XAcLXh1CNKT/G3rNxSg6qpzHIHJjn5ScT5NmPoKUtMfTTsDdy9M61b9R18Ys/o7B4l8zLD8RCqsrttRzpF5ZPwwV8E0BOa8owXtOJ9IqM+HgZ9GRQ1MwZMTPk4G6OQUtYyvh9v1dBrxyr8L2NMVWWU6j5/xQZJP6NADGnNz5v88rDR3KoZ3IPjr3eVNefitGNRElRhBx/BSg97hTZncvwqm0jrL8/1K1qcAoJsaZPIEjccj3bTLGW84j+CqC/uyff+M6jPpkgRRBUNhPiv0M962wMtJQMkfibDxDJSkqNbtYTnV8NI0hSo1tvZ05Q5vhkZsheF0tZx/9YwAxH3FAp+JUZDiYnKLNCbZIZiqZBhJxIAIScSACEnEgAhJxIgP2tZeFE2M7gemsIKwyrDHFtCWGFY4GhXPhJZBZ8e+ambeCeJTdRMnr/013hBl8gbBBTN17VLEA9dxbEcRZhgfjBFtrDW2e3fxC3o9xzvoeQZilb3zWqSker1T5C7k2JIXLONlORcvX6aG84e1zz+oZK9gE8twtE/WhHiG1Bbp9nfFkGexXvjvAf3CvRbMjC1HIAAAAASUVORK5CYII=');
+  width: 64px;
+  height: 64px;
+  display: block;
+}
 .i-box-input {
   padding-left: 20px;
   padding-right: 40px;
@@ -60,6 +66,18 @@
   padding: 24px 100px 24px 100px;
 
 }
+.i-downloadTemplate {
+  position: absolute;
+  color: black;
+  bottom: -80px;
+  text-decoration: underline #F6B41F;
+  text-underline-offset: 5px;
+  &:hover {
+    color: black;
+    text-decoration: underline #F6B41F;
+  }
+  display:none
+}
 
 .i-inputText {
   height: 40px;
@@ -112,9 +130,28 @@
   padding: 14px;
 }
 
-.i-table{
+.i-table {
   width: 100%;
   font-size: 8px;
+}
+
+.i-th {
+  white-space: nowrap; 
+  vertical-align:middle; 
+}
+
+.i-checkFiles{
+  color: #FDB71E;
+  border-radius: 100%;
+  font-size: 12px;
+  height: 20px;
+  border: none;
+  position: relative;
+  bottom: 35px;
+  right: 20px;
+  z-index: 1;
+  max-width: 100px;
+  float: right;
 }
 
 /* ---------- BUTTON ---------- */
@@ -377,7 +414,7 @@
 
 #i-msform h2 {
   font-weight: bold;
-  padding: 50px 84px 50px 84px;
+  padding: 50px 84px 30px 84px;
 }
 
 .i-form-card {
@@ -390,7 +427,7 @@
 
 .i-form-row {
   display: flex;
-  padding-left: 84px;
+  padding-left: 77px;
   padding-right: 84px;
   padding-bottom: 20px;
   vertical-align: middle;
@@ -413,14 +450,17 @@
 }
 
 #i-msform input, #i-msform textarea {
-  border: 0px solid #fff;
   border-radius: 8px;
-  width: 80%;
+  width: 100%;
   box-sizing: border-box;
   color: #2C3E50;
   font-size: 12px;
   letter-spacing: 1px;
   outline: none;
+  line-height: 30px;
+  margin-left: 30px;
+  padding: 0 5px 0 5px;
+  overflow: hidden;
 }
 
 #i-msform input:focus, #i-msform textarea:focus {
@@ -572,4 +612,173 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+// date picker
+.body-date-picker {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: 'Saira', Arial, Helvetica, sans-serif;
+  background-color: rgb(148, 129, 105);
+}
+
+.date-container {
+  display: flex;
+  justify-content: center;
+}
+
+.date-bodyrow {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 50px;
+  background-color: rgb(235, 231, 227);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.date-title {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.date-picker {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dates {
+  margin: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rowdate {
+  display: flex;
+  flex-direction: row;
+}
+
+.colday {
+  padding-left: 30px;
+  border-left: 2px solid rgb(197, 191, 191);
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 100%;
+}
+
+.days .day {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-picker .dates .days .day.selected {
+  background-color: rgb(255, 115, 0);
+  ;
+  font-weight: bold;
+}
+
+.days .day:hover {
+  background-color: rgb(255, 115, 0);
+  ;
+}
+
+.dayrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dayrow span {
+  padding: 0px 10px;
+}
+
+.days {
+  padding-left: 30px;
+  border-left: 2px solid rgb(185, 185, 185);
+}
+
+.year {
+  width: 50%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: 1px solid #
+}
+
+.months {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.months .month {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.months .month.selected {
+  background-color: rgb(255, 115, 0);
+  font-weight: bold;
+}
+
+.months .month:hover {
+  background-color: rgb(255, 115, 0);
+  ;
+}
+
+.list-month {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+
+.year {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrows {
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgb(255, 115, 0);
+}
+
+.arrows:hover {
+  background-color: rgb(226, 172, 128);
+  ;
+}
+
+.list-month span {
+  margin: 10px 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.list-month span:hover {
+  background-color: rgb(194, 179, 179);
+  border-radius: 10px;
+}
+
+.selected-date {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgb(255, 115, 0);
 }

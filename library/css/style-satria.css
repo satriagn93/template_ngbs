@@ -519,6 +519,11 @@ Multi steps indicator
   width: 40%;
 }
 
+.div_button_add_s {
+  text-align: right;
+  width: 60%;
+}
+
 .button_back_s {
   background-color: #d7d9d7;
   color: black;
@@ -550,6 +555,23 @@ Multi steps indicator
 }
 
 .button_yes_s:hover {
+  background-color: #efb029;
+}
+
+.button_add_s {
+  background-color: #eeb742;
+  color: black;
+  border: 2px solid #e7ab29;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  width: 230px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.button_add_s:hover {
   background-color: #efb029;
 }
 
@@ -631,4 +653,24 @@ Multi steps indicator
 .approval-title-s{
   font-size: 24px;
   font-weight: bold;
+}
+
+.div_head_search-s{
+  margin-right: 62%;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.s-box-input {
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 200px;
+  height: 35px;
+  font-size: 12px;
+  border: 2px;
+  border-color: 0;
+  border-radius: 8px;
+  background-color: #fff;
 }

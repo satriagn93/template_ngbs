@@ -46,11 +46,15 @@
                     </div>
                 </div>
 
-                
+                <!-- -===========INCLUDE====================== -->
+                <div id="divTransaction" class="container" style="display: none;"></div>
+                <div id="divFeature" class="container" style="display: none;"></div>
+                <div id="divAccount" class="container" style="display: none;"></div>
+                <div id="divAnalytic" class="container" style="display: none;"></div>
+                <!-- -===========INCLUDE====================== -->
                 
             </div>
         </div>
-        <!-- =======> your body code END here~ -->
     </div>
 </div>
 
@@ -62,3 +66,33 @@
         <button style="margin-right: 2%;" class="button button_yes_s" onclick="submitCreate()">SUBMIT</button>
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        $("#divTransaction").load("createTransaction.html");
+        $("#divFeature").load("createFeature.html");
+        $("#divAccount").load("createAccount.html");
+        $("#divAnalytic").load("createAnalytic.html");
+
+        var divTransaction = document.getElementById("divTransaction");
+        divTransaction.style.display = "block";
+    });
+    
+    var divTransaction = document.getElementById("divTransaction");
+    var divFeature = document.getElementById("divFeature");
+    
+    function showTransaction() {
+        divFeature.style.display = "none";
+        divAccount.style.display = "none";
+        divAnalytic.style.display = "none";
+        divTransaction.style.display = "block";
+    }
+
+    function showFeature() {
+        divTransaction.style.display = "none";
+        divAccount.style.display = "none";
+        divAnalytic.style.display = "none";
+        divFeature.style.display = "block";
+    }
+
+</script>

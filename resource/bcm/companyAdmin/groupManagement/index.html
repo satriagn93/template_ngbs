@@ -172,7 +172,6 @@
         </div>
         <!-- =================include================== -->
         <div id="divCreate" style="display: none;"></div>
-        <div id="formTransaction" style="display: none;"></div>
         <!-- =================include================== -->
     </div>
 
@@ -201,12 +200,9 @@
     </div>
 </body>
 <script>
-
     $(document).ready(function () {
 
         $("#divCreate").load("create.html");
-
-        $("#formTransaction").load("createTransaction.html");
 
         loopdata();
         var table = $('.datTable').DataTable({
@@ -277,7 +273,7 @@
 
     var listIndex = document.getElementById("listIndex");
     var divCreate = document.getElementById("divCreate");
-    var formTransaction = document.getElementById("formTransaction");
+    
 
     // ==============MODAL CREATE==============
     function modalAdd() {
@@ -292,7 +288,6 @@
         $('#modalAdd').hide();
         listIndex.style.display = "none";
         divCreate.style.display = "block";
-        formTransaction.style.display = "block";
     }
     // ==============MODAL CREATE==============
 
