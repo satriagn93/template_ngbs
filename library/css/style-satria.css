@@ -559,16 +559,17 @@ Multi steps indicator
 }
 
 .button_add_s {
-  background-color: #eeb742;
+  background-color: #fcaf16;
   color: black;
-  border: 2px solid #e7ab29;
-  height: 30px;
+  border: 2px solid #fcaf16;
+  height: 35px;
   border-radius: 10px;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 13px;
   width: 230px;
   font-weight: bold;
   letter-spacing: 2px;
+  margin-right: 2%;
 }
 
 .button_add_s:hover {
@@ -656,9 +657,9 @@ Multi steps indicator
 }
 
 .div_head_search-s{
-  margin-right: 62%;
   letter-spacing: 1px;
   font-weight: bold;
+  margin-right: 62%;
 }
 
 .s-box-input {
@@ -666,7 +667,7 @@ Multi steps indicator
   padding-right: 40px;
   padding-top: 2px;
   padding-bottom: 2px;
-  width: 200px;
+  width: 260px;
   height: 35px;
   font-size: 12px;
   border: 2px;
@@ -674,3 +675,28 @@ Multi steps indicator
   border-radius: 8px;
   background-color: #fff;
 }
+
+.div_head_title_s{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.align-to-right {
+  float: right;
+  padding: 10px;
+  margin-right: 260px;
+  margin-bottom: 20px;
+ }
+
+ .align_right_view {
+  float: right;
+  padding: 10px;
+  margin-right: 10px;
+ }
+
+ .title_list_s{
+  margin-left: 20px; 
+  margin-bottom: 25px; 
+  margin-top: 25px;
+ }

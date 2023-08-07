@@ -85,18 +85,23 @@
             <div class="col-md-12 col_bcm_normalPage" id="listIndex">
                 <!-- =======> your body code START here~ -->
                 <div class="o-box-default">
-                    <div>
-                        <div class="div_button_add_s">
-                            <button style="margin-right: 2%;" class="button button_add_s" onclick="">+ Add New Company User</button>
-                        </div>
+                    <div class="div_head_title_s">
+                        <h3><b>Create New User</b></h3>
+                        <p>Manage the user aaccount by creating new user and also edit existing user's account in Bukopin Cash Management. <b>Click the Add New Company User button </b>to proceed with the management</p>
                     </div>
-                    <div>
+                    <div class="div_head_title_s">
+                        <button class="button button_add_s" onclick="modalAdd()">+ Add New Company User</button>
+                    </div>
+                    <div class="div_head_title_s">
                         <hr>
                     </div>
-                    <div class="row mb-5" style="margin-left: 20px;">
-                        <div class="div_head_search-s">
-                            <p><b>COMPANY USER LIST</b></p>
-                        </div>
+                    <div class="align-to-right">
+                        <div class="c-absolute-search">
+                            <input class="s-box-input" type="text" placeholder="Search User by Name on ID">
+                            <span class="c_bx_ico_search_submit"><i class="c_ico_search"></i></span>
+                        </div> 
+                    </div>
+                    <div class="align_right_view">
                         <div class="row" style=" width: 150px;">
                             <div style="margin-top: 6px; color: #545045;">VIEW </div>
                             <select class="c_sel_normal sel_typeTopLogo"
@@ -107,20 +112,14 @@
                                 <option value="75">75</option>
                             </select>
                         </div>
-                        <div style="width: 100px; margin-right: 110px;">
-                            <div class="c-absolute-search">
-                                <input class="s-box-input" type="text" placeholder="Search User by Name on ID">
-                                <span class="c_bx_ico_search_submit"><i class="c_ico_search"></i></span>
-                            </div>
+                    </div>
+                    <div class="row title_list_s">
+                        <div class="div_head_search-s">
+                            <p><b>COMPANY USER LIST</b></p>
                         </div>
-                        <!-- <div style="position: absolute; right:10px; width: 200px">
-                            <div>
-                                <button onclick="modalAdd()" class="o-btn-add-bulk-chekerList">+ Add New Company User</button>
-                            </div>
-                        </div> -->
                     </div>
                     <!-- DATA TABLES -->
-                    <div class="h-table-margin j-custom-pagination">
+                    <div style="margin-top: 40px;" class="h-table-margin j-custom-pagination">
                         <table class="table table-borderless o-table datTable">
                             <thead>
                                 <tr class="o-table-head">
